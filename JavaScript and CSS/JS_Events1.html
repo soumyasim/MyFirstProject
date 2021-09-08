@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<button id="btn1" type="button">Click</button>
+<script>
+document.getElementById("btn1").addEventListener("click",showDate);
+function showDate()
+{
+	document.getElementById("demo").innerHTML=Date();	
+}
+</script>
+</body>
+</html>

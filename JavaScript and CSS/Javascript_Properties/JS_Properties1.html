@@ -1,0 +1,14 @@
+<html>
+<body>
+<button id="btn1"  type="button" onclick=Click()>Click Me!</button>
+<p id="p1"></p>
+<script>
+p="Hidden";
+function Click()
+{
+	document.getElementById("btn1").style.visibility="hidden";
+	document.getElementById("p1").innerHTML=this.p;
+}
+</script>
+</body>
+</html>

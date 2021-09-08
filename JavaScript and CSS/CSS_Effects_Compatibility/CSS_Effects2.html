@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.animation1
+{
+  width:100px;
+  height:100px;
+  background:red;
+  position:relative;
+  animation-name:mymove; 
+  animation-duration:5s; 
+  animation-iteration-count:5;
+  animation-delay:2s;
+}
+.animation2
+{
+  width:100px;
+  height:100px;
+  background:green;
+  position:static;
+  animation-name:mymove; 
+  animation-duration:5s; 
+  animation-iteration-count:5;
+  animation-delay:2s;
+}
+.animation3
+{
+  width:100px;
+  height:100px;
+  background:blue;
+  position:absolute;
+  animation-name:mymove; 
+  animation-duration:10s; 
+  animation-iteration-count:10;
+  animation-delay:0s;
+}
+.animation4
+{
+  width:100px;
+  height:100px;
+  background:purple;
+  position:sticky;
+  animation-name:mymove; 
+  animation-duration:5s; 
+  animation-iteration-count:5;
+  animation-delay:2s;
+}
+.animation5
+{
+  width:100px;
+  height:100px;
+  background:yellow;
+  position:fixed;
+  animation-name:mymove; 
+  animation-duration:5s; 
+  animation-iteration-count:5;
+  animation-delay:2s;
+}
+@keyframes mymove
+{
+  from {left:0px;}
+  to {left:200px;}
+}
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+</style>
+</head>
+<body>
+
+<h2>Active and Hoverable Pagination</h2>
+<p>Move the mouse over the numbers.</p>
+
+<div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a class="active" href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+</div>
+<div class="animation1"></div>
+<div class="animation2"></div>
+<div class="animation3"></div>
+<div class="animation4"></div>
+<div class="animation5"></div>
+</body>
+</html>

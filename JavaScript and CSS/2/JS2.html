@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="p1"></p>
+<button type="button" onclick=onClick()>Click Me!</button>
+<p id="p2"></p>
+<script>
+const fruits=["apple","mango","banana"];
+document.getElementById("p1").innerHTML=fruits;
+function onClick()
+{
+	fruits.sort();
+	document.getElementById("p2").innerHTML=fruits;	
+}
+</script>
+</body>
+</html>

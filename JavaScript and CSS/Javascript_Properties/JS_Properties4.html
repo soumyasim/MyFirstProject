@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<p id="p1"></p>
+<button type="button" onclick=Click()>Click</button>
+<p id="p2"></p>
+<script>
+var h=0;
+const student1={i:0,set count2(count2)
+{
+	this.i=count2;
+}
+};
+g=parseInt(prompt("Enter the start value: "),10);
+student1.count2=g;
+const student={s:student1.i,get count1()
+{	
+	return this.s;
+}	
+};
+k=student.count1;
+function Click()
+{
+	fname=prompt("Enter firstname: ");
+	lname=prompt("Enter lastname: ");
+	age=prompt("Enter age: ");
+	eye=prompt("Enter eyecolor: ");
+	const per=new Person(fname,lname,age,eye);
+	parseInt(k,10);
+	parseInt(h,10);
+	k=k+1;
+	h=h+1;
+	document.getElementById("p2").innerHTML=k;
+	document.getElementById("p1").innerHTML+=h+".    "+"Name: "+per.firstname+" "+per.lastname+" "+"Age: "+per.age+" "+" "+"Eye-Color: "+per.eyecolor+" "+"Index: "+k+"   ->      ";
+}
+function Person(first,last,age,eyecolor)
+{
+	this.firstname=first;
+	this.lastname=last;
+	this.age=age;
+	this.eyecolor=eyecolor;
+}
+</script>
+</body>
+</html>
+

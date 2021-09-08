@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+Enter text: <input id="txt1" type="text">
+<button type="button" onclick="sub()">Click</button>
+<script>
+function sub()
+{
+	var x=document.getElementById("txt1").value;
+	if(x.length==0)
+	{
+		alert("Text should not be empty!");
+	}
+	console.log("Text entered is: "+x);
+}
+</script>
+</body>
+</html>
